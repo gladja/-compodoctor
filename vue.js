@@ -107,7 +107,7 @@ new Vue({
             ],
 
             currentSliderIndex: 0,
-
+            interval: 3000,
             sliderSlogan: [
                 {
                     id: 1,
@@ -144,6 +144,15 @@ new Vue({
             } else {
                 this.currentSliderIndex++
             }
+        }
+    },
+
+    mounted() {
+        if (this.interval > 0) {
+            let vm = this;
+            setInterval( function () {
+                vm.nextSlide()
+            }, vm.interval)
         }
     },
 })
