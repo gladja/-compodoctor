@@ -105,32 +105,45 @@ new Vue({
                     highlightedLine: true,
                 },
             ],
+
+            currentSliderIndex: 0,
+
             sliderSlogan: [
                 {
                     id: 1,
-                    text: 'Мы всегда рядом ',
-                },
-                {
-                    id: 2,
                     text: 'Ремонт компьютеров',
                 },
                 {
-                    id: 3,
+                    id: 2,
                     text: 'Ремонт ноутбуков',
                 },
                 {
-                    id: 4,
+                    id: 3,
                     text: 'Ремонт телефонов',
                 },
                 {
-                    id: 5,
+                    id: 4,
                     text: 'Ремонт принтеров',
                 },
                 {
+                    id: 5,
+                    text: 'Заправка картриджей',
+                },
+                {
                     id: 6,
-                    text: 'С нами ты можешь забыть о проблемах с электроникой',
+                    text: 'Мы всегда рядом',
                 },
             ]
+        }
+    },
+
+    methods: {
+        nextSlide() {
+            if (this.currentSliderIndex >= this.sliderSlogan.length -1) {
+                this.currentSliderIndex = 0
+            } else {
+                this.currentSliderIndex++
+            }
         }
     },
 })

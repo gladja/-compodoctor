@@ -133,7 +133,7 @@ body {
 
 .main-screen .main-text {
     text-align: center;
-    margin-top: 29vh;
+    margin-top: 26vh;
 }
 
 .main-screen .main-name {
@@ -141,7 +141,7 @@ body {
     color: #ffffff;
 }
 /*slider*/
-.wrapper {
+.wrapper__slider {
     max-width: 300px;
     overflow: hidden;
     margin: 0 auto;
@@ -149,7 +149,17 @@ body {
 
 .slider {
     display: flex;
+    transition: all ease .5s;
     margin-left: -100%;
+}
+
+.slider__item {
+    color: #cfcfcf;
+    font-family: "Trebuchet MS", serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 4vh;
+    min-width: 250px;
 }
 
 .slogan {
@@ -158,13 +168,12 @@ body {
     font-size: 22px;
     font-weight: 400;
     margin-top: 3vh;
-    min-width: 250px;
 
 }
 
 .more-btn {
     text-align: center;
-    margin-top: 12vh;
+    margin-top: 4vh;
     margin-bottom: 13vh;
     padding: 10px 40px;
     border-radius: 15px;
