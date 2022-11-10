@@ -73,14 +73,16 @@
 						<img class="img-fluid main-logo-img" src="./img/main-header-logo.svg"
 						     alt="КомпоДоктор">
 					</h1>
-<!--					<h2 class="slogan">С нами ты можешь забыть о проблемах с электроникой</h2>-->
-					<div class="slider" :style="{ 'margin-lest': '-' + 100+ '%'}">
-					<h2 class="slogan"
-					    v-for="item in sliderSlogan"
+					<!--					<h2 class="slogan">С нами ты можешь забыть о проблемах с электроникой</h2>-->
+					<div class="wrapper">
+						<div class="slider" :style="{ 'margin-lest': '-' + 100+ '%'}">
+							<h2 class="slogan"
+							    v-for="item in sliderSlogan"
 
-					>
-						{{ item.text }}
-					</h2>
+							>
+								{{ item.text }}
+							</h2>
+						</div>
 					</div>
 				</div>
 				<a id="know-more" href="#about-us" class="more-btn"><span class="more-btn-text">Узнать больше</span></a>
