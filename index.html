@@ -73,7 +73,7 @@
 						<img class="img-fluid main-logo-img" src="./img/main-header-logo.svg"
 						     alt="КомпоДоктор">
 					</h1>
-					<h2 v-if="show" class="slogan">З нами ти можеш забути про проблеми з електронікою</h2>
+					<h2 v-if="show" class="slogan">З нами ти можеш забути о проблемах з електронікою</h2>
 					<h2 v-else class="slogan">С нами ты можешь забыть о проблемах с электроникой</h2>
 					<div class="wrapper__slider">
 						<div class="slider" :style="{ 'margin-left': '-' + (96 * currentSliderIndex) + '%'}">
@@ -83,7 +83,8 @@
 <!--						<button @click="nextSlide">click</button>-->
 					</div>
 				</div>
-				<a id="know-more" href="#about-us" class="more-btn"><span class="more-btn-text">Узнать больше</span></a>
+				<a v-if="show"id="know-more" href="#about-us" class="more-btn"><span class="more-btn-text">Дізнатись більше</span></a>
+				<a v-else id="know-more" href="#about-us" class="more-btn"><span class="more-btn-text">Узнать больше</span></a>
 			</div>
 		</div>
 	</div>
