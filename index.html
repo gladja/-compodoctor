@@ -76,9 +76,9 @@
 					<h2 v-if="show" class="slogan">З нами ти можеш забути про проблеми з електронікою</h2>
 					<h2 v-else class="slogan">С нами ты можешь забыть о проблемах с электроникой</h2>
 					<div class="wrapper__slider">
-						<div class="slider" :style="{ 'margin-left': '-' + (95 * currentSliderIndex) + '%'}">
+						<div class="slider" :style="{ 'margin-left': '-' + (96 * currentSliderIndex) + '%'}">
 							<h2 v-if="show" v-for="item in sliderSlogan" class="slider__item">{{ item.textUa }}</h2>
-							<h2 v-else v-for="item in sliderSlogan" class="slider__item">{{ item.textRu }}</h2>
+							<h2 v-else class="slider__item">{{ item.textRu }}</h2>
 						</div>
 <!--						<button @click="nextSlide">click</button>-->
 					</div>
