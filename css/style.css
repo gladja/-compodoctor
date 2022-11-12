@@ -5,27 +5,13 @@
 body {
     margin: 0;
 }
-
-
-/*.logo {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    padding: 3px 0;*/
-/*}*/
-
-/*.compoDoctor {*/
-/*    display: none;*/
-/*}*/
-
-
+/*menu*/
 .main-header {
     height: 100vh;
     width: 100%;
     background: url(../img/main-bg.jpg) no-repeat center center;
     background-size: cover;
 }
-
-
 
 .header-row {
     display: flex;
@@ -34,7 +20,7 @@ body {
     justify-content: center;
     background: grey;
     height: 60px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .menu-category {
@@ -47,6 +33,7 @@ body {
     text-transform: uppercase;
     flex-flow: row nowrap;
     padding: 0;
+    width: 550px;
 }
 
 .menu-category li {
@@ -88,42 +75,17 @@ body {
     opacity: 0.8;
 }
 
+/*for mobile phone*/
 .menu-mobile {
     display: none;
 }
-
-.working-time {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.working-time {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: auto 10px;
-    font-family: "DS Hiline", serif;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.working-time-hours {
-    margin-bottom: 0;
-}
+/*//////////////////*/
 
 .text-center {
     text-align: center;
 }
 
-.working-time {
-    color: #e9e9e9;
-    font-family: "Trebuchet MS", serif;
-    font-weight: 400;
-}
-
-/*комподоктор лого*/
+/*compodoctor logo*/
 .main-screen {
     display: flex;
     justify-content: center;
@@ -140,8 +102,17 @@ body {
     font-family: "DS Hiline", sans-serif;
     color: #ffffff;
 }
+
+.slogan {
+    color: #cfcfcf;
+    font-family: "Trebuchet MS", serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+
 /*slider*/
-.wrapper__slider {
+.wrapper-slider {
     max-width: 300px;
     overflow: hidden;
     margin: 0 auto;
@@ -160,15 +131,6 @@ body {
     font-weight: 400;
     margin-top: 4vh;
     min-width: 250px;
-}
-
-.slogan {
-    color: #cfcfcf;
-    font-family: "Trebuchet MS", serif;
-    font-size: 22px;
-    font-weight: 400;
-    margin-top: 3vh;
-
 }
 
 .more-btn {
