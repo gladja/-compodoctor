@@ -1,5 +1,5 @@
 * {
-    /*box-sizing: border-boxc;*/
+    box-sizing: border-boxc;
 }
 
 body {
@@ -129,6 +129,7 @@ body {
     display: flex;
     transition: all ease .5s;
     margin-left: -100%;
+
 }
 
 .slider__item {
@@ -138,6 +139,7 @@ body {
     font-weight: 400;
     margin-top: 4vh;
     min-width: 250px;
+    padding: 0 20px;
 }
 
 .more-btn {
@@ -208,8 +210,8 @@ body {
 .services-box a:active,
 .services-box a:focus {
     text-decoration: none;
+    background-color: rgba(125, 125, 125, 0.7);
     transition: 0.2s ease-out;
-    color: #fff;
 }
 
 .services-box-img {
@@ -235,7 +237,7 @@ body {
     margin-bottom: 100px;
     align-self: center;
     width: 131px;
-    padding: 8px 0;
+    padding: 10px 0;
     color: #ffffff;
     font-family: "Trebuchet MS", serif;
     font-size: 15px;
@@ -244,29 +246,67 @@ body {
     border-radius: 15px;
     background-color: #a60000;
     opacity: 0.8;
+    text-decoration: none;
+
 }
 
 /*table*/
-.section-services {
-    box-shadow: 0 2px 8px rgb(0 0 0 / 35%);
-    padding-bottom: 50px
+.computer-price {
+    padding-bottom: 50px;
+    font-family: "Trebuchet MS", serif;
+    font-size: 16px;
+    font-weight: 400;
+    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);*/
 }
 
-.wrapper__computer {
+.computer-price-wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    /*align-items: flex-end;*/
 
 }
 
-h2 {
-    padding: 0 20px;
+.computer-price-header {
+    margin: 0 17px 0 0;
+    font-family: "Trebuchet MS", serif;
+    font-size: 35px;
+    font-weight: 400;
+
 }
 
-table {
+.computer-price-table {
+    box-shadow: none;
+    /*margin-top: 75px;*/
     border-collapse: collapse;
     margin: 0 auto;
 }
+
+.computer-price td {
+    padding: 7px 5px;
+}
+
+/*.section-services {*/
+/*    box-shadow: 0 2px 8px rgb(0 0 0 / 35%);*/
+/*    padding-bottom: 50px*/
+/*}*/
+
+/*.wrapper__computer {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin-bottom: 20px;*/
+
+
+
+/*h4 {*/
+/*    padding: 0 20px;*/
+/*}*/
+
+/*table {*/
+/*    border-collapse: collapse;*/
+/*    margin: 0 auto;*/
+/*}*/
 
 
 .highlighted__line {
@@ -280,16 +320,16 @@ table {
 
 }
 
-.colum__one {
-    width: 800px;
-    min-width: 300px;
-    padding: 5px 10px;
+/*.colum__one {*/
+/*    width: 800px;*/
+/*    min-width: 300px;*/
+/*    padding: 5px 10px;*/
 
-}
+/*}*/
 
-.colum__two {
-    width: 100px;
-    min-width: 100px;
-    text-align:  end;
-    padding: 5px 10px;
-}
+/*.colum__two {*/
+/*    width: 100px;*/
+/*    min-width: 100px;*/
+/*    text-align:  end;*/
+/*    padding: 5px 10px;*/
+/*}*/
