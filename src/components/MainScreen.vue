@@ -28,7 +28,7 @@
 <script>
 export default {
   name: "MainScreen",
-  props : ['show'],
+  props: ['show'],
   data() {
     return {
       // show: true,

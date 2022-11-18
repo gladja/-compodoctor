@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <div id="header" class="main-header">
-      <NavBar :show="show"/>
+      <NavBar
+          :show="show"
+          @changeLng="changeLngNavBar"
+      />
       <MainScreen :show="show"/>
     </div>
   </div>
@@ -16,13 +19,22 @@ export default {
   name: 'App',
   components: {
     MainScreen,
-    NavBar
+    NavBar,
   },
+
   data() {
     return {
       show: true,
     }
-  }
+  },
+
+  methods: {
+    changeLngNavBar() {
+      let show = this.show;
+      this.show = !show;
+      // console.log(show);
+    }
+  },
 
 }
 </script>

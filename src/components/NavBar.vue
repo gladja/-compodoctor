@@ -17,8 +17,8 @@
           </ul>
         </div>
         <div class="btn-language">
-          <button v-on:click="show = !show" v-if="show">RU</button>
-          <button v-on:click="show = !show" v-else>UA</button>
+          <button v-on:click="changeLng" v-if="show">RU</button>
+          <button v-on:click="changeLng" v-else>UA</button>
         </div>
       </div>
       <!--			<div class="menu-mobile" style="display: none;">-->
@@ -36,12 +36,17 @@
 <script>
 export default {
   name: "NavBar",
-  props : ['show'],
+  props: ['show'],
   data() {
     return {
       // show: true,
     }
-  }
+  },
+  methods: {
+    changeLng() {
+      this.$emit('changeLng', this.show)
+    }
+  },
 }
 </script>
 
