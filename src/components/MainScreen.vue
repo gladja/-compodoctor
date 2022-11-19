@@ -22,6 +22,7 @@
       <a v-else id="know-more" href="#about-us" class="more-btn"><span
           class="more-btn-text">Узнать больше</span></a>
     </div>
+
   </div>
 </template>
 
@@ -31,7 +32,6 @@ export default {
   props: ['show'],
   data() {
     return {
-      // show: true,
       currentSliderIndex: 0,
       interval: 3000,
       sliderSlogan: [

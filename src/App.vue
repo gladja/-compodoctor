@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <div id="header" class="main-header">
-      <NavBar
-          :show="show"
-          @changeLng="changeLngNavBar"
-      />
-      <MainScreen :show="show"/>
+    <div>
+      <div id="header" class="main-header">
+        <NavBar
+            :show="show"
+            @changeLng="changeLngNavBar"
+        />
+        <MainScreen :show="show"/>
+      </div>
+      <ServiceMenu/>
     </div>
   </div>
 </template>
@@ -13,11 +16,12 @@
 <script>
 import NavBar from "@/components/NavBar";
 import MainScreen from "@/components/MainScreen";
-
+import ServiceMenu from "@/components/ServiceMenu";
 
 export default {
   name: 'App',
   components: {
+    ServiceMenu,
     MainScreen,
     NavBar,
   },
