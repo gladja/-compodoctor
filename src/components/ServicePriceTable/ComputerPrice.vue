@@ -201,7 +201,7 @@ export default {
 }
 
 .computer-price td {
-  padding: 7px 10px;
+  padding: 10px 10px;
 }
 
 .highlighted__line {

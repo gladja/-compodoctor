@@ -49,7 +49,7 @@ export default {
 <style>
 * {
   /*box-sizing: border-boxc;*/
-  /*scroll-behavior: smooth;*/
+  scroll-behavior: smooth;
 }
 
 
