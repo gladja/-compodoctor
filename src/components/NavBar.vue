@@ -11,7 +11,7 @@
           </ul>
           <ul v-else class="menu-category">
             <li class="menu-first"><a href="#services">Услуги</a></li>
-            <li><a @click="scrollTo" href="#computer-price">Цены</a></li>
+            <li><a href="#computer-price">Цены</a></li>
             <li><a href="#about-us">О нас</a></li>
             <li><a href="#our-contacts">Контакты</a></li>
           </ul>
@@ -47,22 +47,18 @@ export default {
       this.$emit('changeLng', this.show)
     },
 
-    //   scrollTo() {
-    //     window.scrollTo({
-    //       behavior: 'smooth'
-    //     });
+    scrollTo() {
+      this.$refs["bottom"].scrollIntoView({ behavior: "smooth" })
+    },
+
+    // scrollTo(to) {
+    //   if (to.hash) {
+    //     return {
+    //       selector: to.hash,
+    //       behavior: 'smooth',
+    //     }
     //   }
     // },
-
-
-    scrollTo(to) {
-      if (to.hash) {
-        return {
-          selector: to.hash,
-          behavior: 'smooth',
-        }
-      }
-    },
   }
 }
 </script>
