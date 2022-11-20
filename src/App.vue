@@ -48,8 +48,10 @@ export default {
 
 <style>
 * {
-  box-sizing: border-boxc;
+  /*box-sizing: border-boxc;*/
+  /*scroll-behavior: smooth;*/
 }
+
 
 body {
   margin: 0;

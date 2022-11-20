@@ -1,6 +1,7 @@
 <template>
 <div>
   <ComputerPrice :show="show"/>
+  <ComputerPrice :show="show"/>
 </div>
 </template>
 
