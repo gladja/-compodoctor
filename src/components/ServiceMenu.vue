@@ -14,8 +14,8 @@
                alt="Компьютерные услуги">
           <h3 v-if="show" class="services-box-desc">{{ service.nameUa }}</h3>
           <h3 v-else class="services-box-desc">{{ service.nameRu }}</h3>
-          <a v-if="show" class="services-box-btn" :href="service.url">Цiни</a>
-          <a v-else class="services-box-btn" :href="service.url">Цены</a>
+          <a v-if="show" v-smooth-scroll class="services-box-btn" :href="service.url">Цiни</a>
+          <a v-else v-smooth-scroll class="services-box-btn" :href="service.url">Цены</a>
         </div>
       </div>
     </div>

@@ -4,16 +4,16 @@
       <div class="header-row">
         <div id="menu" class="menu">
           <ul v-if="show" class="menu-category">
-            <li class="menu-first"><a href="#services">Послуги</a></li>
-            <li><a @click="scrollTo" href="#computer-price">Цiни</a></li>
-            <li><a href="#about-us">Про нас</a></li>
-            <li><a href="#our-contacts">Контакти</a></li>
+            <li class="menu-first"><a v-smooth-scroll href="#services">Послуги</a></li>
+            <li><a v-smooth-scroll href="#computer-price">Цiни</a></li>
+            <li><a v-smooth-scroll href="#about-us">Про нас</a></li>
+            <li><a v-smooth-scroll href="#our-contacts">Контакти</a></li>
           </ul>
           <ul v-else class="menu-category">
-            <li class="menu-first"><a href="#services">Услуги</a></li>
-            <li><a href="#computer-price">Цены</a></li>
-            <li><a href="#about-us">О нас</a></li>
-            <li><a href="#our-contacts">Контакты</a></li>
+            <li class="menu-first"><a v-smooth-scroll href="#services">Услуги</a></li>
+            <li><a v-smooth-scroll href="#computer-price">Цены</a></li>
+            <li><a v-smooth-scroll href="#about-us">О нас</a></li>
+            <li><a v-smooth-scroll href="#our-contacts">Контакты</a></li>
           </ul>
         </div>
         <div class="btn-language">
