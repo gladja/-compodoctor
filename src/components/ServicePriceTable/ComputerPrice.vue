@@ -29,7 +29,6 @@
         </tbody>
       </table>
     </div>
-    <a v-smooth-scroll href="#app"><button>up</button></a>
   </section>
 </template>
 

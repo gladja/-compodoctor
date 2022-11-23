@@ -3,7 +3,7 @@ import App from './App.vue'
 import VueSmoothScroll from 'vue2-smooth-scroll'
 
 Vue.use(VueSmoothScroll, {
-  duration: 1500,
+  duration: 2000,
 })
 
 Vue.config.productionTip = false

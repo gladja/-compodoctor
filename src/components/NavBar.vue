@@ -38,28 +38,13 @@ export default {
   name: "NavBar",
   props: ['show'],
   data() {
-    return {
-      // show: true,
-    }
+    return {}
   },
   methods: {
     changeLng() {
       this.$emit('changeLng', this.show)
-    },
-
-    scrollTo() {
-      this.$refs["bottom"].scrollIntoView({ behavior: "smooth" })
-    },
-
-    // scrollTo(to) {
-    //   if (to.hash) {
-    //     return {
-    //       selector: to.hash,
-    //       behavior: 'smooth',
-    //     }
-    //   }
-    // },
-  }
+    }
+  },
 }
 </script>
 

@@ -6,6 +6,7 @@
             :show="show"
             @changeLng="changeLngNavBar"
         />
+        <ScrollUp />
         <MainScreen :show="show"/>
       </div>
       <ServiceMenu :show="show"/>
@@ -19,10 +20,12 @@ import NavBar from "@/components/NavBar";
 import MainScreen from "@/components/MainScreen";
 import ServiceMenu from "@/components/ServiceMenu";
 import ServicePrice from "@/components/ServicePrice";
+import ScrollUp from "@/components/ScrollUp";
 
 export default {
   name: 'App',
   components: {
+    ScrollUp,
     ServicePrice,
     ServiceMenu,
     MainScreen,
