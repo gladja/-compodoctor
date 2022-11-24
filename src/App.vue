@@ -11,6 +11,7 @@
       </div>
       <ServiceMenu :show="show"/>
       <ServicePrice :show="show"/>
+      <AboutUs />
     </div>
   </div>
 </template>
@@ -21,10 +22,12 @@ import MainScreen from "@/components/MainScreen";
 import ServiceMenu from "@/components/ServiceMenu";
 import ServicePrice from "@/components/ServicePrice";
 import ScrollUp from "@/components/ScrollUp";
+import AboutUs from "@/components/AboutUs";
 
 export default {
   name: 'App',
   components: {
+    AboutUs,
     ScrollUp,
     ServicePrice,
     ServiceMenu,
