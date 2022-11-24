@@ -5,7 +5,7 @@
         <h4 v-if="show" class="computer-price-header">Ціни на абонентське обслуговування</h4>
         <h4 v-else class="computer-price-header">Цены на абонентское обслуживание</h4>
         <img class="img-fluid computer-price-header-img"
-             src="@/assets/img/services/abonents-price/abonents-icon.svg"
+             src="@/assets/img/services/abonents-price/abonents-price-icon.svg"
              alt="computer price">
       </div>
 
@@ -97,8 +97,8 @@ export default {
         },
         {
           id: 8,
-          nameUa: 'Віддалене налаштування комп\'ютера',
-          nameRu: 'Удаленная настройка компьютера',
+          nameUa: 'Віддалене налаштування комп\'ютера (AnyDesk, TeamViewer)',
+          nameRu: 'Удаленная настройка компьютера (AnyDesk, TeamViewer)',
           priceUa: 'від 100.00 грн.',
           priceRU: 'от 100.00 грн.',
           highlightedLine: false,
