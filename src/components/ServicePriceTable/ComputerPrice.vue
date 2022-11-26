@@ -2,8 +2,8 @@
   <section class="computer-price" id="computer-price">
     <div class="container">
       <div class="computer-price-wrap">
-        <h4 v-if="show" class="computer-price-header">Ціни на комп'ютерні послуги</h4>
-        <h4 v-else class="computer-price-header">Цены на компьютерные услуги</h4>
+        <h3 v-if="show" class="computer-price-header">Ціни на комп'ютерні послуги</h3>
+        <h3 v-else class="computer-price-header">Цены на компьютерные услуги</h3>
         <img class="img-fluid computer-price-header-img"
              src="@/assets/img/services/computer-price/copmuter-price-icn.svg"
              alt="computer price">

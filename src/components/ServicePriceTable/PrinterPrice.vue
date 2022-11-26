@@ -2,8 +2,8 @@
   <section class="computer-price" id="printers-price">
     <div class="container">
       <div class="computer-price-wrap">
-        <h4 v-if="show" class="computer-price-header">Ціни на заправку та ремонт принтерів</h4>
-        <h4 v-else class="computer-price-header">Цены на заправку и ремонт принтеров</h4>
+        <h3 v-if="show" class="computer-price-header">Ціни на заправку та ремонт принтерів</h3>
+        <h3 v-else class="computer-price-header">Цены на заправку и ремонт принтеров</h3>
         <img class="img-fluid computer-price-header-img"
              src="@/assets/img/services/printer-price/printer-price-icon.svg"
              alt="computer price">

@@ -2,8 +2,8 @@
   <section class="computer-price" id="mobile-price">
     <div class="container">
       <div class="computer-price-wrap">
-        <h4 v-if="show" class="computer-price-header">Ціни на ремонт мобільної техніки</h4>
-        <h4 v-else class="computer-price-header">Цены на ремонт мобильной техники</h4>
+        <h3 v-if="show" class="computer-price-header">Ціни на ремонт мобільної техніки</h3>
+        <h3 v-else class="computer-price-header">Цены на ремонт мобильной техники</h3>
         <img class="img-fluid computer-price-header-img"
              src="@/assets/img/services/mobile-price/mobile-price-icon.svg"
              alt="computer price">

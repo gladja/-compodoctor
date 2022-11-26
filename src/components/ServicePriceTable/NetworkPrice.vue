@@ -2,8 +2,8 @@
   <section class="computer-price" id="network-price">
     <div class="container">
       <div class="computer-price-wrap">
-        <h4 v-if="show" class="computer-price-header">Ціни на дротові та бездротові локальні мережі</h4>
-        <h4 v-else class="computer-price-header">Цены на проводные и беспроводные локальные сети</h4>
+        <h3 v-if="show" class="computer-price-header">Ціни на дротові та бездротові локальні мережі</h3>
+        <h3 v-else class="computer-price-header">Цены на проводные и беспроводные локальные сети</h3>
         <img class="img-fluid computer-price-header-img"
              src="@/assets/img/services/network-price/network-price-icon.svg"
              alt="computer price">
