@@ -99,7 +99,7 @@ export default {
 }
 
 .about-us-header {
-  margin: 90px 17px 0 0;
+  margin: 80px 17px 0 0;
   font-size: 35px;
   font-weight: 400;
 }

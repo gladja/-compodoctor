@@ -9,18 +9,31 @@
         <div v-if="show" class="slogan">З нами ти можеш забути о проблемах з електронікою</div>
         <div v-else class="slogan">С нами ты можешь забыть о проблемах с электроникой</div>
         <div class="wrapper-slider">
-          <div class="slider" :style="{ 'margin-left': '-' + (96 * currentSliderIndex) + '%'}">
+          <div :style="{ 'margin-left': '-' + (96 * currentSliderIndex) + '%'}" class="slider">
             <div v-for="item in sliderSlogan" :key="item.id">
-            <h2 v-if="show" class="slider__item">{{ item.textUa }}</h2>
-            <h2 v-else class="slider__item">{{ item.textRu }}</h2>
+              <h2 v-if="show" class="slider__item">{{ item.textUa }}</h2>
+              <h2 v-else class="slider__item">{{ item.textRu }}</h2>
             </div>
           </div>
           <!--						<button @click="nextSlide">click</button>-->
         </div>
       </div>
-      <a v-if="show" id="know-more" href="#about-us" class="more-btn"><span class="more-btn-text">Дізнатись більше</span></a>
-      <a v-else id="know-more" href="#about-us" class="more-btn"><span
-          class="more-btn-text">Узнать больше</span></a>
+      <a
+          v-smooth-scroll
+          v-if="show"
+          id="know-more"
+          href="#about-us"
+          class="more-btn"
+      >
+        <span class="more-btn-text">Дізнатись більше</span>
+      </a>
+      <a
+          v-smooth-scroll
+          v-else id="know-more"
+          href="#about-us"
+          class="more-btn"
+      >
+        <span class="more-btn-text">Узнать больше</span></a>
     </div>
 
   </div>
@@ -70,7 +83,7 @@ export default {
   },
   methods: {
     nextSlide() {
-      if (this.currentSliderIndex >= this.sliderSlogan.length -1) {
+      if (this.currentSliderIndex >= this.sliderSlogan.length - 1) {
         this.currentSliderIndex = 0
       } else {
         this.currentSliderIndex++
@@ -81,7 +94,7 @@ export default {
   mounted() {
     if (this.interval > 0) {
       let vm = this;
-      setInterval( function () {
+      setInterval(function () {
         vm.nextSlide()
       }, vm.interval)
     }

@@ -11,7 +11,7 @@
       </div>
       <ServiceMenu :show="show"/>
       <ServicePrice :show="show"/>
-      <AboutUs />
+      <AboutUs :show="show"/>
     </div>
   </div>
 </template>
