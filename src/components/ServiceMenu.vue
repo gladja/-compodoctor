@@ -102,6 +102,7 @@ export default {
   font-family: "Trebuchet MS", serif;
   font-size: 20px;
   font-weight: 400;
+  color: #b83333;
   margin-bottom: 57px;
 }
 

@@ -133,6 +133,7 @@ export default {
   font-family: "Trebuchet MS", serif;
   font-size: 35px;
   font-weight: 400;
+  box-shadow: 0 5px 8px -3px rgb(0 0 0 / 35%);
 }
 
 .about-us-wrap {
@@ -162,6 +163,7 @@ export default {
   font-weight: 400;
   line-height: 18.51px;
   margin-top: 50px;
+  align-items: center;
 }
 
 .about-us-text-wrap {

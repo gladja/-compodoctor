@@ -12,6 +12,8 @@
       <ServiceMenu :show="show"/>
       <ServicePrice :show="show"/>
       <AboutUs :show="show"/>
+      <OurContacts :show="show"/>
+      <FooterEnd :show="show"/>
     </div>
   </div>
 </template>
@@ -23,10 +25,14 @@ import ServiceMenu from "@/components/ServiceMenu";
 import ServicePrice from "@/components/ServicePrice";
 import ScrollUp from "@/components/ScrollUp";
 import AboutUs from "@/components/AboutUs";
+import OurContacts from "@/components/OurContacts";
+import FooterEnd from "@/components/FooterEnd";
 
 export default {
   name: 'App',
   components: {
+    FooterEnd,
+    OurContacts,
     AboutUs,
     ScrollUp,
     ServicePrice,
