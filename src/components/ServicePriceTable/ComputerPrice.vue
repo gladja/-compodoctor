@@ -213,7 +213,7 @@ export default {
 }
 
 .colum__one {
-  width: 700px;
+  width: 850px;
   min-width: 200px;
 }
 

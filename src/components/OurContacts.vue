@@ -9,7 +9,7 @@
 <!--        <img class="our-contacts-header-img img-fluid" src="@/assets/img/contacts/phone-icon.png" alt="phone">-->
       </div>
     </div>
-    <hr class="line">
+<!--    <hr class="line">-->
     <div class="container">
       <div class="contacts">
         <div class="contacts-wrap">
@@ -23,9 +23,9 @@
             <img class="img-fluid" src="@/assets/img/contacts/e-mail-icon.svg" alt="e-mail">
             <span>info@pcdoc.ck.ua</span>
           </div>
-          <div class="home-phone-nmb">
-            <img class="img-fluid" src="@/assets/img/contacts/home-phone-number-icon.svg" alt="home-phone">
-            <span>(0472) 56-90-90</span>
+          <div class="time-work">
+            <img class="img-fluid-icon" src="@/assets/img/contacts/time-icon.svg" alt="home-phone">
+            <span>пн-пт 10:00 - 18:30</span>
           </div>
           <div class="mobile-phone-nmb">
             <img class="img-fluid" src="@/assets/img/contacts/mobile-phone-number-icon.svg" alt="mobile-phone">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <hr class="line">
+<!--    <hr class="line">-->
   </section>
 </template>
 
@@ -47,7 +47,7 @@ export default {
 
 <style>
 .our-contacts {
-  margin-bottom: 5px;
+  margin-bottom: 40px;
 }
 
 .our-contacts .wrapper {
@@ -63,7 +63,7 @@ export default {
   align-items: center;
   width: 1110px;
   margin-top: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .our-contacts-header {
@@ -81,13 +81,13 @@ export default {
 
 .contacts-wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #252525;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 31.51px;
-  max-width: 1100px;
+  max-width: 1050px;
   margin: 0 auto;
 }
 
@@ -107,5 +107,9 @@ export default {
 
 .line {
   background-color: #252525;
+}
+
+.img-fluid-icon {
+  height: 80px;
 }
 </style>

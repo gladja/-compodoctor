@@ -27,14 +27,14 @@
                  alt="VK">
           </a>
         </div>
-        <div class="footer-phone">
-          <p class="footer-slogan">Мы всегда рядом <br><span class="footer-number">56-90-90</span></p>
-          <a class="go-top" href="#header"
-             onmouseout="querySelector('img').src='img/footer/go-top-icon.png'"
-             onmouseover="querySelector('img').src='img/footer/go-top-hover.png'">
-            <img id="go-top" class="img-fluid footer-go-top"
-                 src="img/footer/go-top-icon.png" alt="go-top"></a>
-        </div>
+<!--        <div class="footer-phone">-->
+<!--          <p class="footer-slogan">Мы всегда рядом <br><span class="footer-number">56-90-90</span></p>-->
+<!--          <a class="go-top" href="#header"-->
+<!--             onmouseout="querySelector('img').src='img/footer/go-top-icon.png'"-->
+<!--             onmouseover="querySelector('img').src='img/footer/go-top-hover.png'">-->
+<!--            <img id="go-top" class="img-fluid footer-go-top"-->
+<!--                 src="img/footer/go-top-icon.png" alt="go-top"></a>-->
+<!--        </div>-->
       </div>
     </div>
   </footer>
@@ -56,6 +56,9 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1050px;
+  margin: 0 auto;
+  height: 80px;
 }
 
 .footer-facebook, .footer-vk, .footer-inst {

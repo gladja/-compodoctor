@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div>
+    <div class="wrapper">
       <div id="header" class="main-header">
         <NavBar
             :show="show"
@@ -66,9 +66,8 @@ export default {
 
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Trebuchet MS", sans-serif;
-
 }
 
 /*menu*/
