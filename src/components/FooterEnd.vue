@@ -7,24 +7,17 @@
         </div>
         <div class="footer-social">
           <a class="footer-facebook" href="https://www.facebook.com/pcdoc.ck/" target="_blank"
-             onmouseout="querySelector('img').src='img/footer/facebook-icon.svg'"
-             onmouseover="querySelector('img').src='img/footer/facebook-hover.svg'">
-            <img class="social-icons img-fluid" src="img/footer/facebook-icon.svg"
+             onmouseout="querySelector('img').src='@/assets/img/footer/facebook-icon.svg'"
+             onmouseover="querySelector('img').src='@/assets/img/footer/facebook-hover.svg'">
+            <img class="social-icons img-fluid" src="@/assets/img/footer/facebook-icon.svg"
                  alt="Facebook">
           </a>
           <a class="footer-inst" href="https://www.instagram.com/kompodoktor/" target="_blank"
-             onmouseout="querySelector('img').src='img/footer/instagram-logo.svg'"
-             onmouseover="querySelector('img').src='img/footer/instagram-hover.svg'">
+             onmouseout="querySelector('img').src='@/assets/img/footer/instagram-logo.svg'"
+             onmouseover="querySelector('img').src='@/assets/img/footer/instagram-hover.svg'">
             <img class="social-icons img-fluid"
-                 src="img/footer/instagram-logo.svg"
+                 src="@/assets/img/footer/instagram-logo.svg"
                  alt="Instagram">
-          </a>
-          <a class="footer-vk" href="https://vk.com/kompodoktor" target="_blank"
-             onmouseout="querySelector('img').src='img/footer/vk-icon.svg'"
-             onmouseover="querySelector('img').src='img/footer/vk-hover.svg'">
-            <img class="social-icons img-fluid"
-                 src="img/footer/vk-icon.svg"
-                 alt="VK">
           </a>
         </div>
 <!--        <div class="footer-phone">-->

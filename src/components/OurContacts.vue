@@ -15,12 +15,13 @@
         <div class="contacts-wrap">
           <a class="map-link" href="https://goo.gl/maps/veC7tdv7szQ2" target="_blank">
             <div class="address">
-              <img class="img-fluid" src="@/assets/img/contacts/map-icon.svg" alt="map">
-              <span class="contacts-text">Ул. Смелянская 23<br>Черкассы<br>18000<br>Украина</span>
+              <img class="img-fluid-icon" src="@/assets/img/contacts/map-icon.svg" alt="map">
+              <span v-if="show">м. Черкаси<br>вул. Смiлянська 23<br>мiнус 1 поверх </span>
+              <span v-else>г. Черкассы<br>ул. Смелянская 23<br>минус 1 этаж </span>
             </div>
           </a>
           <div class="e-mail">
-            <img class="img-fluid" src="@/assets/img/contacts/e-mail-icon.svg" alt="e-mail">
+            <img class="img-fluid-icon" src="@/assets/img/contacts/e-mail-icon.svg" alt="e-mail">
             <span>info@pcdoc.ck.ua</span>
           </div>
           <div class="time-work">
@@ -28,7 +29,7 @@
             <span>пн-пт 10:00 - 18:30</span>
           </div>
           <div class="mobile-phone-nmb">
-            <img class="img-fluid" src="@/assets/img/contacts/mobile-phone-number-icon.svg" alt="mobile-phone">
+            <img class="img-fluid-icon" src="@/assets/img/contacts/mobile-phone-number-icon.svg" alt="mobile-phone">
             <span>(093) 056-90-90<br>(097) 056-90-90</span>
           </div>
         </div>
@@ -101,12 +102,13 @@ export default {
   margin-left: 10px;
 }
 
-.contacts-text {
-  text-decoration: none;
-}
 
 .line {
   background-color: #252525;
+}
+
+a.map-link  {
+  text-decoration: none;
 }
 
 .img-fluid-icon {
