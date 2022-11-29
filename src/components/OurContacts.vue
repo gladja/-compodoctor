@@ -26,7 +26,8 @@
           </div>
           <div class="time-work">
             <img class="img-fluid-icon" src="@/assets/img/contacts/time-icon.svg" alt="home-phone">
-            <span>пн-пт 10:00 - 18:30</span>
+            <span v-if="show">пн-пт 10:00 -<s>18:30</s><br>тимчасово до 17:00</span>
+            <span v-else>пн-пт 10:00 -<s>18:30</s><br>временно до 17:00</span>
           </div>
           <div class="mobile-phone-nmb">
             <img class="img-fluid-icon" src="@/assets/img/contacts/mobile-phone-number-icon.svg" alt="mobile-phone">
