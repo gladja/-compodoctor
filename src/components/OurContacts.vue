@@ -6,37 +6,56 @@
         <h3 v-else class="our-contacts-header">Наши контакты</h3>
         <div v-if="show" class="our-contacts-desc">Ми завжди поруч</div>
         <div v-else class="our-contacts-desc">Мы всегда рядом</div>
-<!--        <img class="our-contacts-header-img img-fluid" src="@/assets/img/contacts/phone-icon.png" alt="phone">-->
+        <!--        <img class="our-contacts-header-img img-fluid" src="@/assets/img/contacts/phone-icon.png" alt="phone">-->
       </div>
     </div>
-<!--    <hr class="line">-->
+    <!--    <hr class="line">-->
     <div class="container">
       <div class="contacts">
         <div class="contacts-wrap">
           <a class="map-link" href="https://goo.gl/maps/veC7tdv7szQ2" target="_blank">
-            <div class="address">
-              <img class="img-fluid-icon" src="@/assets/img/contacts/map-icon.svg" alt="map">
-              <span v-if="show">м. Черкаси<br>вул. Смiлянська 23<br>мiнус 1 поверх </span>
-              <span v-else>г. Черкассы<br>ул. Смелянская 23<br>минус 1 этаж </span>
+            <div class="contacts-wrap-item">
+              <div>
+                <img class="img-fluid-icon" src="@/assets/img/contacts/map-icon.svg" alt="map">
+              </div>
+              <div class="contacts-wrap-text">
+                <span v-if="show">м.Черкаси вул.Смiлянська 23 мiнус 1 поверх </span>
+                <span v-else>г.Черкассы ул.Смелянская 23 минус 1 этаж </span>
+              </div>
             </div>
           </a>
-          <div class="e-mail">
-            <img class="img-fluid-icon" src="@/assets/img/contacts/e-mail-icon.svg" alt="e-mail">
-            <span>info@pcdoc.ck.ua</span>
+
+          <div class="contacts-wrap-item">
+            <div>
+              <img class="img-fluid-icon" src="@/assets/img/contacts/mobile-phone-number-icon.svg" alt="mobile-phone">
+            </div>
+            <div class="contacts-wrap-text">
+              <span>(093) 056-90-90 (097) 056-90-90</span>
+            </div>
           </div>
-          <div class="time-work">
-            <img class="img-fluid-icon" src="@/assets/img/contacts/time-icon.svg" alt="home-phone">
-            <span v-if="show">пн-пт 10:00 -<s>18:30</s><br>тимчасово до 17:00</span>
-            <span v-else>пн-пт 10:00 -<s>18:30</s><br>временно до 17:00</span>
+
+          <div class="contacts-wrap-item">
+            <div>
+              <img class="img-fluid-icon" src="@/assets/img/contacts/e-mail-icon.svg" alt="e-mail">
+            </div>
+            <div class="contacts-wrap-text">
+              <span>info@pcdoc.ck.ua</span>
+            </div>
           </div>
-          <div class="mobile-phone-nmb">
-            <img class="img-fluid-icon" src="@/assets/img/contacts/mobile-phone-number-icon.svg" alt="mobile-phone">
-            <span>(093) 056-90-90<br>(097) 056-90-90</span>
+
+          <div class="contacts-wrap-item">
+            <div>
+              <img class="img-fluid-icon" src="@/assets/img/contacts/time-icon.svg" alt="home-phone">
+            </div>
+            <div class="contacts-wrap-text">
+              <span v-if="show">пн-пт 10:00 -<s>18:30</s> тимчасово до 17:00</span>
+              <span v-else>пн-пт 10:00 -<s>18:30</s> временно до 17:00</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-<!--    <hr class="line">-->
+    <!--    <hr class="line">-->
   </section>
 </template>
 
@@ -63,7 +82,6 @@ export default {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 1110px;
   margin-top: 80px;
   margin-bottom: 40px;
 }
@@ -86,7 +104,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   color: #252525;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 400;
   line-height: 31.51px;
   max-width: 1050px;
@@ -103,16 +121,19 @@ export default {
   margin-left: 10px;
 }
 
-
 .line {
   background-color: #252525;
 }
 
-a.map-link  {
+a.map-link {
   text-decoration: none;
 }
 
 .img-fluid-icon {
   height: 80px;
+}
+
+.contacts-wrap-text {
+  width: 182px;
 }
 </style>

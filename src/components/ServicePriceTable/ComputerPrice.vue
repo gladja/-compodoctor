@@ -218,7 +218,7 @@ export default {
 }
 
 .colum__two {
-    width: 130px;
+    width: 150px;
     min-width: 100px;
     text-align:  end;
 }

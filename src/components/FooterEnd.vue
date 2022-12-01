@@ -6,9 +6,9 @@
           <img class="img-fluid" src="@/assets/img/footer/footer-logo.png" alt="КомпоДоктор">
         </div>
         <div class="footer-social">
-          <a class="footer-facebook" href="https://www.facebook.com/pcdoc.ck/" target="_blank"
-             onmouseout="querySelector('img').src='@/assets/img/footer/facebook-icon.svg'"
-             onmouseover="querySelector('img').src='@/assets/img/footer/facebook-hover.svg'">
+          <a class="footer-facebook" href="https://www.facebook.com/pcdoc.ck/" target="_blank">
+<!--             onmouseout="querySelector('img').src='@/assets/img/footer/facebook-icon.svg'"-->
+<!--             onmouseover="querySelector('img').src='@/assets/img/footer/facebook-hover.svg'">-->
             <img class="social-icons img-fluid" src="@/assets/img/footer/facebook-icon.svg"
                  alt="Facebook">
           </a>

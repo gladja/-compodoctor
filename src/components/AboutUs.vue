@@ -162,12 +162,10 @@ export default {
   font-size: 14px;
   font-weight: 400;
   line-height: 18.51px;
-  margin-top: 50px;
   align-items: center;
-}
-
-.about-us-text-wrap {
-  max-width: 750px;
+  margin: 50px auto 0;
+  max-width: 1040px;
+  text-align: justify;
 }
 
 .about-us-img-wrap {

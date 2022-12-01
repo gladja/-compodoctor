@@ -95,7 +95,6 @@ export default {
 
 .btn-language {
   padding-left: 150px;
-
 }
 
 .btn-language button {
