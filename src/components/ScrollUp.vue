@@ -34,7 +34,7 @@ export default {
 <style>
 .scroll a {
   position: fixed;
-  bottom: 1%;
+  bottom: 1.4%;
   right: 1%;
   /*transition: 1s;*/
 }

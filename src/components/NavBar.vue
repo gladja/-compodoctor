@@ -16,26 +16,24 @@
             <li><a v-smooth-scroll href="#our-contacts">Контакты</a></li>
           </ul>
         </div>
+
+        <!--adaptive from 800px-->
+        <NavBarBurger :show="show"/>
+
         <div class="btn-language">
           <button v-on:click="changeLng" v-if="show">RU</button>
           <button v-on:click="changeLng" v-else>UA</button>
         </div>
       </div>
-      <!--			<div class="menu-mobile" style="display: none;">-->
-      <!--				<ul>-->
-      <!--					<li><a href="#services">Услуги</a></li>-->
-      <!--					<li><a class="menu-prices" href="#computer-price">Цены</a></li>-->
-      <!--					<li><a class="menu-about-us" href="#about-us">О нас</a></li>-->
-      <!--					<li><a href="#our-contacts">Контакты</a></li>-->
-      <!--				</ul>-->
-      <!--			</div>-->
     </div>
   </div>
 </template>
 
 <script>
+import NavBarBurger from "@/components/Adaptive/NavBarBurger";
 export default {
   name: "NavBar",
+  components: {NavBarBurger},
   props: ['show'],
   data() {
     return {}
@@ -69,6 +67,7 @@ export default {
   flex-flow: row nowrap;
   padding: 0;
   width: 550px;
+  align-items: center;
 }
 
 .menu-category li {

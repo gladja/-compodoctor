@@ -117,5 +117,7 @@ export default {
 
 .footer-social {
   display: flex;
+  padding-right: 20px;
+
 }
 </style>

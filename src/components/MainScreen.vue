@@ -33,15 +33,22 @@
           href="#about-us"
           class="more-btn"
       >
-        <span class="more-btn-text">Узнать больше</span></a>
+        <span class="more-btn-text">Узнать больше</span>
+      </a>
+
+      <!--adaptive from 600px-->
+      <ButtonMainScreen :show="show"/>
+
     </div>
 
   </div>
 </template>
 
 <script>
+import ButtonMainScreen from "@/components/Adaptive/ButtonMainScreen";
 export default {
   name: "MainScreen",
+  components: {ButtonMainScreen},
   props: ['show'],
   data() {
     return {
@@ -170,7 +177,7 @@ export default {
   transition: 0.2s ease-out;
 }
 
-.more-btn span {
+.more-btn-text {
   color: #ffffff;
   font-family: "Trebuchet MS", serif;
   font-size: 20px;
