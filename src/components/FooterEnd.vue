@@ -12,12 +12,14 @@
             <img class="social-icons img-fluid" src="@/assets/img/footer/facebook-icon.svg"
                  alt="Facebook">
           </a>
-          <a class="footer-inst" href="https://www.instagram.com/kompodoktor/" target="_blank"
-             onmouseout="querySelector('img').src='@/assets/img/footer/instagram-logo.svg'"
-             onmouseover="querySelector('img').src='@/assets/img/footer/instagram-hover.svg'">
-            <img class="social-icons img-fluid"
-                 src="@/assets/img/footer/instagram-logo.svg"
-                 alt="Instagram">
+          <a class="footer-inst" href="https://www.instagram.com/kompodoktor/" target="_blank">
+<!--             onmouseout="querySelector('img').src='@/assets/img/footer/instagram-logo.svg'"-->
+<!--             onmouseover="querySelector('img').src='@/assets/img/footer/instagram-hover.svg'">-->
+<!--            <img class="social-icons img-fluid"-->
+<!--                 src="@/assets/img/footer/instagram-logo.svg"-->
+<!--                 alt="Instagram">-->
+            <IconVK />
+
           </a>
         </div>
 <!--        <div class="footer-phone">-->
@@ -34,8 +36,10 @@
 </template>
 
 <script>
+import IconVK from "@/components/Icons/IconVK";
 export default {
   name: "FooterEnd",
+  components: {IconVK},
   props: ['show'],
 }
 </script>
