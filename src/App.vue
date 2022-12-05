@@ -384,7 +384,14 @@ body {
   .contacts-wrap-text {
     text-align: end;
     padding-left: 30px;
+  }
 
+  .contacts-wrap div {
+    justify-content: flex-end;
+  }
+
+  .contacts-wrap div span {
+    margin: 0;
   }
 
   .img-fluid-icon {
@@ -403,6 +410,10 @@ body {
     }
 
     /*nav bar*/
+    .price {
+      display: none;
+    }
+
     .about {
       display: none;
     }
