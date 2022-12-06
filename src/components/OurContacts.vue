@@ -6,7 +6,6 @@
         <h3 v-else class="our-contacts-header">Наши контакты</h3>
         <div v-if="show" class="our-contacts-desc">Ми завжди поруч</div>
         <div v-else class="our-contacts-desc">Мы всегда рядом</div>
-        <!--        <img class="our-contacts-header-img img-fluid" src="@/assets/img/contacts/phone-icon.png" alt="phone">-->
       </div>
     </div>
     <!--    <hr class="line">-->

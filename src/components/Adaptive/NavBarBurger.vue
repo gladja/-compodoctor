@@ -89,6 +89,14 @@ export default {
   color: #ffffff;
 }
 
+.menu-category-burger a:hover,
+.menu-category-burger a:active,
+.menu-category-burger a:focus {
+  text-decoration: none;
+  border-bottom: 2px solid rgba(187, 9, 11, 0.9);
+  transition-delay: 0.1s;
+}
+
 .menu-first-bg {
   padding-bottom: 10px;
 }

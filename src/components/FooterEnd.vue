@@ -7,39 +7,23 @@
         </div>
         <div class="footer-social">
           <a class="footer-facebook" href="https://www.facebook.com/pcdoc.ck/" target="_blank">
-<!--             onmouseout="querySelector('img').src='@/assets/img/footer/facebook-icon.svg'"-->
-<!--             onmouseover="querySelector('img').src='@/assets/img/footer/facebook-hover.svg'">-->
-            <img class="social-icons img-fluid" src="@/assets/img/footer/facebook-icon.svg"
-                 alt="Facebook">
+            <IconFacebook />
           </a>
           <a class="footer-inst" href="https://www.instagram.com/kompodoktor/" target="_blank">
-<!--             onmouseout="querySelector('img').src='@/assets/img/footer/instagram-logo.svg'"-->
-<!--             onmouseover="querySelector('img').src='@/assets/img/footer/instagram-hover.svg'">-->
-<!--            <img class="social-icons img-fluid"-->
-<!--                 src="@/assets/img/footer/instagram-logo.svg"-->
-<!--                 alt="Instagram">-->
-            <IconVK />
-
+            <IconInstagram />
           </a>
         </div>
-<!--        <div class="footer-phone">-->
-<!--          <p class="footer-slogan">Мы всегда рядом <br><span class="footer-number">56-90-90</span></p>-->
-<!--          <a class="go-top" href="#header"-->
-<!--             onmouseout="querySelector('img').src='img/footer/go-top-icon.png'"-->
-<!--             onmouseover="querySelector('img').src='img/footer/go-top-hover.png'">-->
-<!--            <img id="go-top" class="img-fluid footer-go-top"-->
-<!--                 src="img/footer/go-top-icon.png" alt="go-top"></a>-->
-<!--        </div>-->
       </div>
     </div>
   </footer>
 </template>
 
 <script>
-import IconVK from "@/components/Icons/IconVK";
+import IconFacebook from "@/components/Icons/IconFacebook";
+import IconInstagram from "@/components/Icons/IconInstagram";
 export default {
   name: "FooterEnd",
-  components: {IconVK},
+  components: {IconInstagram, IconFacebook},
   props: ['show'],
 }
 </script>
