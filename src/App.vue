@@ -441,12 +441,19 @@ body {
 
     /*service menu*/
     .services-wrap {
-      max-width: 400px;
-      flex-direction: column;
+      display: none;
     }
 
+    .services-wrap-mob {
+      display: block;
+      /*max-width: 400px;*/
+      /*flex-direction: column;*/
+      /*justify-content: space-between;*/
+      text-align: center;
+      margin: 0 auto;
+    }
     /*table price*/
-    .computer-price {
+    .service-price-wrap {
       display: none;
     }
 

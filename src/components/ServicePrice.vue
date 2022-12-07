@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="service-price-wrap">
   <ComputerPrice :show="show"/>
   <AbonentPrice :show="show"/>
   <MobilePrice :show="show"/>

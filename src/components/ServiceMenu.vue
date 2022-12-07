@@ -18,13 +18,19 @@
           <a v-else v-smooth-scroll class="services-box-btn" :href="service.url">Цены</a>
         </div>
       </div>
+
+      <!--adaptive from 600px-->
+      <ServiceMenuMobile :show="show"/>
     </div>
   </section>
 </template>
 
 <script>
+import ServiceMenuMobile from "@/components/Adaptive/ServiceMenuMobile.vue";
+
 export default {
   name: "ServicesMenu",
+  components: {ServiceMenuMobile},
   props: ['show'],
   data() {
     return {
@@ -154,6 +160,5 @@ export default {
   background-color: #a60000;
   opacity: 0.8;
   text-decoration: none;
-
 }
 </style>
