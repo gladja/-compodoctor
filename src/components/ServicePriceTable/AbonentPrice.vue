@@ -110,5 +110,5 @@ export default {
 </script>
 
 <style>
-/*style for ComputerPrice*/
+/*style for ServicePrice*/
 </style>
