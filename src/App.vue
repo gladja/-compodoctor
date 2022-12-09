@@ -337,7 +337,7 @@ body {
   .services-box-btn {
     width: 130px;
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   /*table price*/
@@ -452,11 +452,28 @@ body {
       text-align: center;
       margin: 0 auto;
     }
+
+    .services-box-btn {
+      /*margin-bottom: 80px;*/
+      cursor: pointer;
+    }
+
     /*table price*/
+    .computer-price {
+      padding-top: 0;
+      box-shadow: none;
+    }
     .service-price-wrap {
       display: none;
     }
 
+    .computer-price-wrap {
+      display: none;
+    }
+
+    .colum__one {
+      text-align: start;
+    }
     /*about us*/
     .about-us {
       display: none;
