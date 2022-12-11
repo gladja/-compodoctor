@@ -8,9 +8,9 @@
         <a v-if="show" class="services-box-btn" v-on:click="openPrice">Цiни</a>
         <a v-else class="services-box-btn" v-on:click="openPrice">Цены</a>
 
-        <template v-if="table">
-        <ComputerPrice :show="show"/>
-        </template>
+        <transition name="fade">
+        <ComputerPrice :show="show" v-if="table"/>
+        </transition>
 
       </div>
 <!--        <ComputerPrice :show="show" v-if="table"/>-->
@@ -65,4 +65,21 @@ export default {
 .services-wrap-mob {
   display: none;
 }
+
+.fade-enter-active, .fade-move {
+  transition: all .5s ease;
+}
+
+.fade-leave-active, .fade-move {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.fade-enter, .fade-leave-to {
+  transform: translateY(-40px);
+  opacity: 0;
+}
+
+
+
+
 </style>
