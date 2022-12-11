@@ -66,20 +66,18 @@ export default {
   display: none;
 }
 
-.fade-enter-active, .fade-move {
-  transition: all .5s ease;
-}
-
-.fade-leave-active, .fade-move {
-  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-
 .fade-enter, .fade-leave-to {
   transform: translateY(-40px);
   opacity: 0;
 }
 
+.fade-enter-active {
+  transition: all .5s ease;
+}
 
+.fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
 
 
 </style>
