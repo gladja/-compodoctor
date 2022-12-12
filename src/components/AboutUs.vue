@@ -179,6 +179,11 @@ export default {
   max-height: 200px;
   max-width: 200px;
   margin-top: 10px;
+  opacity: 0.9;
+}
+
+.about-us-img-wrap img:hover {
+  opacity: 1;
 }
 
 .about-us h4 {
@@ -193,4 +198,8 @@ export default {
   list-style-image: url(@/assets//img/about-us/list-style.png);
 }
 
+
+/*.img-fluid:hover {*/
+/*  opacity: 1;*/
+/*}*/
 </style>

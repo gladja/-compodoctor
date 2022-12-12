@@ -3,7 +3,7 @@
     <div class="btn-menu">
       <button v-on:click="changeBurger">Меню</button>
     </div>
-    <transition v-if="burger" name="menu">
+    <transition v-if="burger" name="menu" appear>
       <ul v-if="show" class="menu-category-burger">
         <li class="menu-first-bg serv"><a v-smooth-scroll href="#services">Послуги</a></li>
         <li class="menu-first-bg price"><a v-smooth-scroll href="#computer-price">Цiни</a></li>
@@ -101,21 +101,22 @@ export default {
   padding-bottom: 10px;
 }
 
-.menu-enter-active {
-  transition:  all 2s ease;
-}
-
-.menu-leave-active {
-  /*transition: opacity 1s;*/
-  /*transition: height 0.4s, opacity 0.5s;*/
-  /*transition: max-height 0.15s ease-out;*/
-  transition:  all 1s ease;
-}
-
+/*animated*/
 .menu-enter, .menu-leave-to {
   opacity: 0;
   transform: translateY(-20px);
 }
 
+.menu-enter-active {
+  transition: all .4s ease;
+}
+
+.menu-leave-active {
+  transition: all .2s ease;
+}
+
+.menu-move {
+  /*transition: all 1.5s ease;*/
+}
 
 </style>

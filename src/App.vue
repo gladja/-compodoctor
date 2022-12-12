@@ -287,9 +287,6 @@ body {
 
   .header-row {
     height: auto;
-    /*transition: max-height 1s ease;*/
-
-
     align-items: baseline;
     justify-content: center;
   }
@@ -297,12 +294,6 @@ body {
   .nav-burg {
     display: block;
   }
-
-  /*.test {*/
-  /*  transform: scaleY(0);*/
-  /*  transform-origin: top;*/
-  /*  transition: transform 0.26s ease;*/
-  /*}*/
 
   /*main screen*/
   .main-logo-img {
@@ -462,6 +453,7 @@ body {
     .computer-price {
       padding-top: 0;
       box-shadow: none;
+      font-size: 13px;
     }
     .service-price-wrap {
       display: none;
@@ -473,7 +465,14 @@ body {
 
     .colum__one {
       text-align: start;
+      width: 250px;
+      min-width: 150px;
     }
+
+    .colum__two {
+      min-width: 60px;
+    }
+
     /*about us*/
     .about-us {
       display: none;

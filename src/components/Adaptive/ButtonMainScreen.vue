@@ -36,4 +36,13 @@ export default {
   background-color: rgba(255, 0, 0, 0.55);
   text-decoration: none;
 }
+
+.more-btn-mob:hover,
+.more-btn-mob:active,
+.more-btn-mob:focus {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.2s ease-out;
+}
+
 </style>
