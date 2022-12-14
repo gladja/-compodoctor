@@ -3,8 +3,8 @@
     <div class="services-wrap-mob">
       <div class="services-box">
         <img class="img-fluid services-box-img" src="@/assets/img/services/1.svg" alt="Компьютерные услуги">
-        <h3 v-if="show" class="services-box-desc">Комп'ютерні послуги</h3>
-        <h3 v-else class="services-box-desc">Компьютерные услуги</h3>
+        <h3 v-if="show" class="services-box-desc">{{ services[0].nameUa }}</h3>
+        <h3 v-else class="services-box-desc">{{ services[0].nameRu }}</h3>
         <a v-if="show" class="services-box-btn" v-on:click="openPrice">Цiни</a>
         <a v-else class="services-box-btn" v-on:click="openPrice">Цены</a>
       </div>
@@ -18,8 +18,8 @@
     <div class="services-wrap-mob">
       <div class="services-box">
         <img class="img-fluid services-box-img" src="@/assets/img/services/2.svg" alt="Компьютерные услуги">
-        <h3 v-if="show" class="services-box-desc">Абонентське обслуговування</h3>
-        <h3 v-else class="services-box-desc">Абонентское обслуживание</h3>
+        <h3 v-if="show" class="services-box-desc">{{ services[1].nameUa }}</h3>
+        <h3 v-else class="services-box-desc">{{ services[1].nameRu }}</h3>
         <a v-if="show" class="services-box-btn" v-on:click="openPrice2">Цiни</a>
         <a v-else class="services-box-btn" v-on:click="openPrice2">Цены</a>
       </div>
@@ -33,8 +33,8 @@
     <div class="services-wrap-mob">
       <div class="services-box">
         <img class="img-fluid services-box-img" src="@/assets/img/services/3.svg" alt="Компьютерные услуги">
-        <h3 v-if="show" class="services-box-desc">Ремонт мобільної техніки</h3>
-        <h3 v-else class="services-box-desc">Ремонт мобильной техники</h3>
+        <h3 v-if="show" class="services-box-desc">{{ services[2].nameUa }}</h3>
+        <h3 v-else class="services-box-desc">{{ services[2].nameRu }}</h3>
         <a v-if="show" class="services-box-btn" v-on:click="openPrice3">Цiни</a>
         <a v-else class="services-box-btn" v-on:click="openPrice3">Цены</a>
       </div>
@@ -48,8 +48,8 @@
     <div class="services-wrap-mob">
       <div class="services-box">
         <img class="img-fluid services-box-img" src="@/assets/img/services/4.svg" alt="Компьютерные услуги">
-        <h3 v-if="show" class="services-box-desc">Заправка та ремонт принтерів</h3>
-        <h3 v-else class="services-box-desc">Заправка и ремонт принтеров</h3>
+        <h3 v-if="show" class="services-box-desc">{{ services[3].nameUa }}</h3>
+        <h3 v-else class="services-box-desc">{{ services[3].nameRu }}</h3>
         <a v-if="show" class="services-box-btn" v-on:click="openPrice4">Цiни</a>
         <a v-else class="services-box-btn" v-on:click="openPrice4">Цены</a>
       </div>
@@ -63,8 +63,8 @@
     <div class="services-wrap-mob">
       <div class="services-box">
         <img class="img-fluid services-box-img" src="@/assets/img/services/5.svg" alt="Компьютерные услуги">
-        <h3 v-if="show" class="services-box-desc">Дротові та бездротові локальні мережі</h3>
-        <h3 v-else class="services-box-desc">Проводные и беспроводные локальные сети</h3>
+        <h3 v-if="show" class="services-box-desc">{{ services[4].nameUa }}</h3>
+        <h3 v-else class="services-box-desc">{{ services[4].nameRu }}</h3>
         <a v-if="show" class="services-box-btn" v-on:click="openPrice5">Цiни</a>
         <a v-else class="services-box-btn" v-on:click="openPrice5">Цены</a>
       </div>
@@ -88,7 +88,7 @@ import NetworkPrice from "@/components/ServicePriceTable/NetworkPrice";
 export default {
   name: "ServiceMenuMobile",
   components: {NetworkPrice, PrinterPrice, MobilePrice, AbonentPrice, ComputerPrice},
-  props: ['show'],
+  props: ['show', 'services'],
   data() {
     return {
       table: false,

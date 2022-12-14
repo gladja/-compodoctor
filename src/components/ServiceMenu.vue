@@ -20,7 +20,7 @@
       </div>
 
       <!--adaptive from 600px-->
-      <ServiceMenuMobile :show="show"/>
+      <ServiceMenuMobile :show="show" :services="services"/>
     </div>
   </section>
 </template>
