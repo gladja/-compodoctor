@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import  NavBar from "@/components/NavBar";
+import NavBar from "@/components/NavBar";
 import MainScreen from "@/components/MainScreen";
 import ServiceMenu from "@/components/ServiceMenu";
 import ServicePrice from "@/components/ServicePrice";
@@ -62,6 +62,11 @@ export default {
 * {
   /*box-sizing: border-boxc;*/
   /*scroll-behavior: smooth;*/
+}
+
+@font-face {
+  font-family: "Trebuchet MS";
+  src: url(./assets/fonts/Trebushet_MS.ttf);
 }
 
 body {
